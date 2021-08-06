@@ -1,0 +1,8 @@
+| tbl_session | CREATE TABLE `tbl_session` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `session` varchar(20) NOT NULL,
+  `account` varchar(10) NOT NULL,
+  `dataHora` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `status` int NOT NULL,
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=501 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
