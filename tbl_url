@@ -1,11 +1,12 @@
 | tbl_url | CREATE TABLE `tbl_url` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `session` varchar(20) NOT NULL,
-  `account` varchar(10) NOT NULL,
+  `account` varchar(50) NOT NULL,
   `dataHora` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `url` varchar(1000) NOT NULL,
   `token` varchar(100) NOT NULL DEFAULT '*',
   `status` int NOT NULL,
   PRIMARY KEY (`account`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=377 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
+) ENGINE=InnoDB AUTO_INCREMENT=388 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
+
