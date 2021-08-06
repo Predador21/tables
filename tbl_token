@@ -1,0 +1,7 @@
+| tbl_token | CREATE TABLE `tbl_token` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
+  `account_id` varchar(100) NOT NULL,
+  `value` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`account_id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
