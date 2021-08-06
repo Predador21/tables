@@ -2,10 +2,13 @@
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `session` varchar(20) DEFAULT NULL,
   `account` varchar(100) NOT NULL,
-  `dataHora` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `d_create` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `refresh_token` varchar(110) NOT NULL,
   `status` varchar(50) NOT NULL DEFAULT 'CREATED',
-  `ultima_atividade` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `d_status_first` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `d_status_last` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `owner` varchar(50) DEFAULT NULL,
+  `d_ping` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`account`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
