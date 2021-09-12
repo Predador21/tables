@@ -4,10 +4,13 @@
   `account` varchar(100) NOT NULL,
   `d_create` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `refresh_token` varchar(110) NOT NULL,
-  `status` varchar(50) NOT NULL DEFAULT 'CREATED',
+  `status` varchar(50) NOT NULL DEFAULT 'BUILDING',
   `d_status` timestamp NULL DEFAULT NULL,
   `owner` varchar(50) DEFAULT NULL,
+  `ativo` char(1) DEFAULT 'T',
   `d_ping` timestamp NULL DEFAULT NULL,
+  `version` varchar(10) DEFAULT NULL,
+  `bearer` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`account`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
+) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
